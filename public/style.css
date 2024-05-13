@@ -1,0 +1,88 @@
+body{
+    background-image: url('bg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('bg.jpg');
+    /* Change "bg.jpg" to your background image URL */
+    background-size: cover;
+    background-position: center;
+   
+    background-color: rgb(222, 218, 227); /* Fallback color */
+    background-size: cover;
+     background-color: rgba(0, 0, 0, 0.25); 
+    z-index: -1;
+    
+}
+
+#turn {
+    font-size: 38px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 2000; 
+    align-self: center;
+    /* border: 3px solid rgb(230, 159, 159); */
+    color: black;
+    margin: auto;
+    height: 57px;
+    margin-top: 20px;
+    margin-top: 20px;
+    /* width: 232px; */
+    width: auto; 
+    white-space: nowrap; 
+    text-align: center;
+}
+
+table{
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    border : 6px solid rgb(9, 240, 206);
+}
+
+#layout{
+    height: 400px;
+    width: 500px;
+    
+    /* border : 5px solid red; */
+    margin : auto ;
+    margin-top : 9px;
+}
+
+.special{
+    color : rgb(28, 2, 53) ;
+    text-decoration: solid;
+    text-shadow: 0cap;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.cells {
+    border: 4px solid black;
+    width: 72px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    height: 56px;
+    padding: auto;
+    background-color: rgb(234, 166, 50);
+}
+
+.cells:hover{
+    background-color:rgb(245, 209, 162);
+    /* background-color: ; */
+}
+
+.status {
+    margin: auto;
+    margin-top: 90px;
+    font-size: 20px;
+    font-weight: 800;
+    font-family:cursive;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 100px;
+    width: 400px;
+    padding-left : 20px;
+    background-color: rgba(215, 219, 222, 0.4);
+    overflow-y: auto;
+
+}
+
+
+

@@ -1,0 +1,94 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>BINGO</title>
+     <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <audio src="/complete.mp3" id ='one'></audio>
+    <audio src="/connect.mp3" id ='two'></audio>
+    <audio src="/yt.mp3" id ='yt'></audio>
+    <audio src="/wina.mp3" id ='wina'></audio>
+    <audio src="/wins.mp3" id ='wins'></audio>
+
+    <div id="turn">
+      Let's <b> BINGO!</b>
+    </div>
+    <div id="layout">
+        <table >
+
+            <tr>
+                <td ><button id="b0" class="cells special rounded-lg" >B</button></td>
+                <td ><button id="b1" class="cells special rounded-lg">I</button></td>
+                <td ><button id="b2" class="cells special rounded-lg">N</button></td>
+                <td ><button id="b3" class="cells special rounded-lg">G</button></td>
+                <td ><button id="b4" class="cells special rounded-lg">O</button></td>
+            </tr>
+            <tr>
+                <td ><button onclick="giveCellData(00)" id="a00" class='cells'></button></td>
+                <td ><button onclick="giveCellData(01)" id="a01" class='cells'></button></td>
+                <td ><button onclick="giveCellData(02)" id="a02" class='cells'></button></td>
+                <td ><button onclick="giveCellData(03)" id="a03" class='cells'></button></td>
+                <td ><button onclick="giveCellData(04)" id="a04" class='cells'></button></td>
+               </tr>
+    
+               <tr>
+                <td ><button onclick="giveCellData(10)" id="a10" class='cells'></button></td>
+                <td ><button onclick="giveCellData(11)" id="a11" class='cells'></button></td>
+                <td ><button onclick="giveCellData(12)" id="a12" class='cells'></button></td>
+                <td ><button onclick="giveCellData(13)" id="a13" class='cells'></button></td>
+                <td ><button onclick="giveCellData(14)" id="a14" class='cells'></button></td>
+               </tr>
+    
+               <tr>
+                <td ><button onclick="giveCellData(20)" id="a20" class='cells'></button></td>
+                <td ><button onclick="giveCellData(21)" id="a21" class='cells'></button></td>
+                <td ><button onclick="giveCellData(22)" id="a22" class='cells'></button></td>
+                <td ><button onclick="giveCellData(23)" id="a23" class='cells'></button></td>
+                <td ><button onclick="giveCellData(24)" id="a24" class='cells'></button></td>
+               </tr>
+    
+               <tr>
+                <td ><button onclick="giveCellData(30)" id="a30" class='cells'></button></td>
+                <td ><button onclick="giveCellData(31)" id="a31" class='cells'></button></td>
+                <td ><button onclick="giveCellData(32)" id="a32" class='cells'></button></td>
+                <td ><button onclick="giveCellData(33)" id="a33" class='cells'></button></td>
+                <td ><button onclick="giveCellData(34)" id="a34" class='cells'></button></td>
+               </tr>
+    
+               <tr>
+                <td ><button onclick="giveCellData(40)" id="a40" class='cells'></button></td>
+                <td ><button onclick="giveCellData(41)" id="a41" class='cells'></button></td>
+                <td ><button onclick="giveCellData(42)" id="a42" class='cells'></button></td>
+                <td ><button onclick="giveCellData(43)" id="a43" class='cells'></button></td>
+                <td ><button onclick="giveCellData(44)" id="a44" class='cells'></button></td>
+               </tr>
+        </table>
+
+        
+    </div id="layout">
+
+    <div class="status" id="display">
+        
+        <p class="players">Welcome!</p>
+    </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+</html>
+
